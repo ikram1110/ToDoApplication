@@ -1,13 +1,140 @@
 body {
+  background: #282c34;
+  color: #ffffff;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header {
+  width: 100%;
+}
+.wrapHeader {
+  margin: 0 auto;
+  width: 850px;
+  position: relative;
+  border-bottom: 2px solid #cccccc;
+}
+.addButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.wrapContent {
+  margin: 0 auto;
+  width: 850px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapList {
+  width: 49%;
+}
+
+.list {
+  padding: 0;
+  width: 100%;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 10px 0px;
+  text-align: left;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.lblToDo {
+  margin-left: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  flex: 1;
+}
+.lblToDo > label {
+  cursor: pointer;
+}
+.bg0 {
+  background-color: #202329;
+}
+.bg1 {
+  background-color: #323741;
+}
+
+/* action */
+.action {
+  width: 50px;
+}
+.action > i {
+  margin-right: 10px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* modal */
+.wrapHeadModal {
+  position: relative;
+  width: 500px;
+}
+.headModal {
+  margin: 0 0 10px 0;
+}
+.closeButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.listForm {
+  margin-bottom: 18px;
+}
+.listForm > label {
+  font-size: 12px;
+  display: block;
+}
+.listForm > input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 4px;
+  border-color: 1px solid #282c34;
+}
+.listForm > textarea {
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 4px;
+  border-color: 1px solid #282c34;
+}
+.listForm > input[type="text"]:focus {
+  border-color: 1px solid #282c34;
+  outline: none;
+}
+.listForm > textarea:focus {
+  border-color: 1px solid #282c34;
+  outline: none;
+}
+.btnSubmit {
+  background-color: #282c34;
+  border: 1px solid #282c34;
+  color: #c4c4c4;
+  border-radius: 4px;
+  padding: 10px 20px;
 }
